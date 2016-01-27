@@ -6,6 +6,10 @@ Silly little ClojureScript / React application I made for my talk at the Miami C
 
 We're sending cats into space!
 
+## Interactivity
+
+Drag the Catstronauts into the shuttle. Once they're all on board, the countdown to lift-off begins. Watch them as they journey off into the void... 
+
 ## Setup
 
 To get an interactive development environment run:
