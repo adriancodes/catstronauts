@@ -74,7 +74,7 @@ img.cat {
   margin-top:5em;
   border-radius:3px;
   border:1px solid white;
-  min-height:700px;
+  min-height:450px;
 }
 
 .launch-pad {
@@ -83,7 +83,7 @@ img.cat {
 }
 .launch-pad .rocket {
   z-index:999;
-  position:absolute;
+  
   bottom:0px;
 }
 .launch-pad .dropped {
