@@ -1,0 +1,86 @@
+/* some style */
+body {
+  padding-top:30px;
+  background: url(http://i.imgur.com/TSUzJN5.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.greeting h1 {
+  color:#fff;
+  font-size:5em;
+  background-color:none;
+  text-shadow:#ccc 0 1px 0,
+  #c9c9c9 0 2px 0,
+  #bbb 0 3px 0,
+  #b9b9b9 0 4px 0,
+  #aaa 0 5px 0,
+  rgba(0,0,0,.1) 0 6px 1px,
+  rgba(0,0,0,.1) 0 0 5px,
+  rgba(0,0,0,.3) 0 1px 3px,
+  rgba(0,0,0,.15) 0 3px 5px,
+  rgba(0,0,0,.2) 0 5px 10px,
+  rgba(0,0,0,.2) 0 10px 10px,
+  rgba(0,0,0,.1) 0 20px 20px;
+}
+
+.houston h2 {
+  color:#fff;
+  font-size:3em;
+}
+
+.houston .countdown h2 {
+  color:red;
+  font-size:3em;
+}
+
+
+
+.draggable {
+  position:relative;
+  bottom:0px;
+  vertical-align:bottom;
+  background-image: url("../img/nasa.png")
+}
+
+.draggable ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+  bottom: 0px;
+}
+.draggable ul li {
+  float:left;
+  margin:10px;
+}
+
+img.cat {
+  border-radius:100px;
+  border:10px solid white
+}
+
+.draggable, .launch-pad {
+  margin-top:5em;
+  border-radius:3px;
+  border:1px solid white;
+  min-height:700px;
+}
+
+.launch-pad {
+  border:none;
+  position:relative;  
+}
+.launch-pad .rocket {
+  z-index:999;
+  position:absolute;
+  bottom:0px;
+}
+.launch-pad .dropped {
+  position:relative;
+  z-index:1;
+  bottom:300px;
+  width:150px;
+  height:200px;
+}
