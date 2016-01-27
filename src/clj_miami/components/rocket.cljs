@@ -1,4 +1,4 @@
-(ns clj-miami.component.shuttle
+(ns clj-miami.components.rocket
   (:require [reagent.core :as reagent]
             [clj-miami.state :refer [app-state]]
             [cljsjs.jquery-ui]))
@@ -19,14 +19,14 @@
   (js/$ (fn []
           (let [$this (js/$ (reagent/dom-node this))]
             (.droppable $this #js{:accept ".cat"
-                                  :drop (fn [event, ui]                           
+                                  :drop (fn [event, ui]
                                           (let [ $origin (js/$ (:draggable (js->clj ui :keywordize-keys true)))]
                                             (.hide $origin)
                                             (swap! app-state update-in [:catstronauts] - 1)
                                             (swap! app-state update-in [:on-board] + 1)
                                             (if (and (= (:catstronauts @app-state) 0) (= (:on-board @app-state) 4))
                                               (do
-                                                (swap! app-state assoc-in [:lift-off :launch-pad] "shake")                                                
+                                                (swap! app-state assoc-in [:lift-off :launch-pad] "shake")
                                                 (lift-off)))))})))))
 
 (defn rocket-component
@@ -38,6 +38,6 @@
   []
   [:div.col-xs-6
    [:div.launch-pad.animated.infinite.text-center
-    {:className (get-in @app-state [:lift-off :launch-pad])} 
+    {:className (get-in @app-state [:lift-off :launch-pad])}
     [rocket-component]]])
 

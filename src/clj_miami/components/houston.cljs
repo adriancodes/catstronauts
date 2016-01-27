@@ -1,4 +1,4 @@
-(ns clj-miami.component.houston
+(ns clj-miami.components.houston
   (:require [clj-miami.state :refer [app-state]]))
 
 (defn countdown-component

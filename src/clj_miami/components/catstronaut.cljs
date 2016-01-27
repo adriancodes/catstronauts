@@ -1,4 +1,4 @@
-(ns clj-miami.component.catstronaut
+(ns clj-miami.components.catstronaut
   (:require [reagent.core :as reagent]
             [clj-miami.state :refer [app-state]]
             [cljsjs.jquery-ui]))

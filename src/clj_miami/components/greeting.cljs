@@ -1,4 +1,4 @@
-(ns clj-miami.component.greeting
+(ns clj-miami.components.greeting
   (:require [clj-miami.state :refer [app-state]]))
 
 (defn greeting-component
