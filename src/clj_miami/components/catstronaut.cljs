@@ -27,7 +27,6 @@
   []
   [:div.col-xs-6
    [:div.draggable.text-center
-    [:div (:countdown @app-state)]
     [:ul (for [cat-index (range 1 5)]
            ^{:key cat-index}
            [:li [cat-component cat-index]])]]])

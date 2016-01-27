@@ -6,7 +6,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color:white;
 }
+
 .greeting h1 {
   color:#fff;
   font-size:5em;
@@ -70,7 +72,7 @@ img.cat {
 
 .launch-pad {
   border:none;
-  position:relative;  
+  position:relative;
 }
 .launch-pad .rocket {
   z-index:999;
