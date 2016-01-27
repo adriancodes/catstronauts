@@ -29,12 +29,12 @@ body {
 
 .houston h2 {
   color:#fff;
-  font-size:3em;
+  font-size:2.5em;
 }
 
 .houston .countdown h2 {
   color:red;
-  font-size:3em;
+  font-size:2.5em;
 }
 
 
@@ -58,9 +58,16 @@ body {
   margin:10px;
 }
 
+.draggable ui li img {
+  width:150px;
+  height:150px;
+}
+
 img.cat {
   border-radius:100px;
-  border:10px solid white
+  border:5px solid white;
+  width:150px;
+  height:150px;
 }
 
 .draggable, .launch-pad {
