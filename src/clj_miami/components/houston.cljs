@@ -14,3 +14,4 @@
     [:h2 "Catstronauts: " (:catstronauts @app-state)]]
    [:div.col-xs-4>div.countdown {:className (if (= 10 (:countdown @app-state)) "hide")} [countdown-component]]
    [:div.col-xs-4 [:h2 (str "On Board: " (:on-board @app-state))]]])
+

@@ -9,6 +9,11 @@
 
 (enable-console-print!)
 
+(defn instruction-component
+  []
+  [:div.col-xs-12
+   [:h4 "Drag and drop each brave catstronaut into the \"Rok 1T\.""]])
+
 (defn main []
   [:div.container
    [:div.row
@@ -16,6 +21,8 @@
     [h/houston-component]
     [c/catstronaut-component]
     [r/shuttle-component]
+    [instruction-component]
+   
     ]])
 
 (reagent/render-component [main]
